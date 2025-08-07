@@ -142,4 +142,4 @@ For feature requests, bugs, or support, please [open an issue](https://github.co
 
 ## 🌐 Live Demo (Optional)
 
-> Coming Soon / Deployed at: https://tobedecided.com
+> Coming Soon at: https://tobedecided.com

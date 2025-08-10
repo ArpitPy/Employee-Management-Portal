@@ -10,6 +10,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * This is invoked by DaoAuthenticationProvider.LoadUserByUsername
+ * to check whether a user is there or not.
+ * if found, then returns the UserAuth object
+ */
 @Service
 public class UserAuthDetailsService implements UserDetailsService {
 
@@ -21,7 +26,7 @@ public class UserAuthDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        // In this app, the username form field carries numeric userId
+        //  the username form field carries numeric userId
         int userId;
         try {
             userId = Integer.parseInt(username);

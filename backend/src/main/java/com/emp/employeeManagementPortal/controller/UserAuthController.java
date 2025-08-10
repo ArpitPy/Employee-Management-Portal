@@ -17,6 +17,7 @@ public class UserAuthController {
         return "forward:/Register.html";
     }
 
+
     @PostMapping("/register")
     public String registerPost(@RequestParam int userId,
                                @RequestParam String email,

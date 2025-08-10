@@ -121,8 +121,15 @@ npm start
         <br /><sub><b>Arpit Pandey</b></sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/AakashRaj8">
+        <img src="https://avatars.githubusercontent.com/AakashRaj8" width="100px;" alt=""/>
+        <br /><sub><b>Aakash Raj</b></sub>
+      </a>
+    </td>
   </tr>
 </table>
+
 
 Want to contribute? [Open an issue](https://github.com/ArpitPy/Employee-Management-Portal/issues) or submit a pull request.
 

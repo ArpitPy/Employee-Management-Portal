@@ -1,5 +1,11 @@
 package com.emp.employeeManagementPortal.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.AutoConfiguration;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
@@ -8,6 +14,9 @@ import org.springframework.web.servlet.resource.PathResourceResolver;
 
 @Configuration
 public class Webconfig implements WebMvcConfigurer {
+
+    @Value("${path.frontEnd}")
+    private String frontendDir;
     /**
      * Maps the URLs to HTML without .html in browser
      */
@@ -25,7 +34,7 @@ public class Webconfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry){
         registry.addResourceHandler("/**", "/css/**", "/js/**", "/images/**")
-                .addResourceLocations("file:D:/Projects/Employee-Management-Portal/frontend/")
+                .addResourceLocations("file:"+frontendDir)
                 .setCachePeriod(0)
                 .resourceChain(true)
                 .addResolver(new PathResourceResolver());

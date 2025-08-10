@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body id="login">
+<nav>
+    <a href="/home">Home</a>
+    <a href="/login">Login</a>
+    <a href="/register">Register</a>
+</nav>
+
+<h1>Login Page</h1>
+<h3>I am the one Who Logs!</h3>
+
+
+<form action="/validate-login" method="post">
+    <label for="userId">User Id</label>
+    <input type="text" name="userId" id="userId" required autocomplete="username">
+
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required autocomplete="current-password">
+
+    <input type="submit" value="Login">
+</form>
+</body>
+</html>

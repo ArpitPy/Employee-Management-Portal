@@ -38,7 +38,7 @@ public class SecurityConfig {
     }
 
     /**
-     * This is Spring Security's security feature.
+     * This is Spring Security's security feature
      * Here the configuration of the web Application is done
      * @param http
      * @param daoAuthenticationProvider
